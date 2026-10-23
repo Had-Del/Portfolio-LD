@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hadrien Delattre – Junior Level / Game Designer</title>
 <meta name="description" content="Portfolio of Hadrien Delattre, junior Level Designer / Game Designer based in Lyon: Unreal Engine and Unity projects, blockout, lighting, narrative.">
-<link rel="alternate" hreflang="en" href="index.html"><link rel="alternate" hreflang="fr" href="index-fr.html">
+
 <style>
 :root{--bg:#f6f7fb;--card:#fff;--ink:#14161f;--mute:#555b6e;--acc:#4338ca;--line:#dfe2ee;--tag:#eceefb}
 @media (prefers-color-scheme:dark){:root{--bg:#0e1017;--card:#171a25;--ink:#eef0f7;--mute:#a4abc0;--acc:#9aa5ff;--line:#2a2f42;--tag:#232840}}
@@ -44,15 +44,16 @@ details h4{margin:14px 0 2px;font-size:.95rem}details p{font-size:.95rem;color:v
 .panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
 .panel h3{margin:0 0 6px}.panel ul{margin:0;padding-left:20px}
 footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mute)}
-.lang{display:flex;gap:8px}.lang a{display:flex;align-items:center;gap:6px;padding:4px 10px;border:2px solid var(--line);border-radius:8px;text-decoration:none;color:var(--ink);font-size:.85rem;font-weight:600}.lang a[aria-current]{border-color:var(--acc)}.lang svg{outline:1px solid var(--line)}
+.lang{display:flex;gap:8px}.lang button{font:inherit;background:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:4px 10px;border:2px solid var(--line);border-radius:8px;text-decoration:none;color:var(--ink);font-size:.85rem;font-weight:600}.lang button[aria-pressed="true"]{border-color:var(--acc)}.lang button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}.lang svg{outline:1px solid var(--line)}
 </style>
 </head>
 <body>
+<div id="site-en" lang="en">
 <a class="skip" href="#projects">Skip to projects</a>
 <header class="top"><div class="wrap">
 <a class="brand" href="#top">Hadrien Delattre</a>
 <nav aria-label="Main"><ul><li><a href="#projects">Projects</a></li><li><a href="#small">Small projects</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-<div class="lang" role="group" aria-label="Language / Langue"><a href="index.html" lang="en" hreflang="en" title="English" aria-current="page"><svg viewBox="0 0 60 30" width="24" height="12" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0l60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30M60 0L0 30" stroke="#C8102E" stroke-width="3"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg><span>EN</span></a><a href="index-fr.html" lang="fr" hreflang="fr" title="Français"><svg viewBox="0 0 3 2" width="24" height="16" aria-hidden="true"><rect width="1" height="2" fill="#0055A4"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#EF4135"/></svg><span>FR</span></a></div>
+<div class="lang" role="group" aria-label="Language / Langue"><button type="button" data-set="en" lang="en" aria-label="English" aria-pressed="true"><svg viewBox="0 0 60 30" width="24" height="12" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0l60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30M60 0L0 30" stroke="#C8102E" stroke-width="3"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg><span>EN</span></button><button type="button" data-set="fr" lang="fr" aria-label="Français" aria-pressed="false"><svg viewBox="0 0 3 2" width="24" height="16" aria-hidden="true"><rect width="1" height="2" fill="#0055A4"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#EF4135"/></svg><span>FR</span></button></div>
 </div></header>
 
 <main id="top">
@@ -61,7 +62,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mute)}
 <p class="eyebrow">Junior Level / Game Designer · Lyon, France</p>
 <h1>I build levels that guide players without telling them where to go.</h1>
 <p class="lead">Six team projects and two solo levels made at GAMESUP (2021–2023) on Unreal Engine and Unity: blockout, lighting, narrative and environment storytelling.</p>
-<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="CV_Hadrien_DELATTRE.pdf">Download my CV (PDF)</a></div>
+<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="CV_Hadrien_DELATTRE_EN.pdf">Download my CV (PDF)</a></div>
 </div>
 </div>
 
@@ -176,5 +177,159 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mute)}
 </div></section>
 </main>
 <footer><div class="wrap">© 2026 Hadrien Delattre · Lyon, France</div></footer>
+</div>
+<div id="site-fr" lang="fr" hidden>
+<a class="skip" href="#fr-projects">Aller aux projets</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="#fr-top">Hadrien Delattre</a>
+<nav aria-label="Principal"><ul><li><a href="#fr-projects">Projets</a></li><li><a href="#fr-small">Petits projets</a></li><li><a href="#fr-about">À propos</a></li><li><a href="#fr-contact">Contact</a></li></ul></nav>
+<div class="lang" role="group" aria-label="Language / Langue"><button type="button" data-set="en" lang="en" aria-label="English" aria-pressed="true"><svg viewBox="0 0 60 30" width="24" height="12" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0l60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30M60 0L0 30" stroke="#C8102E" stroke-width="3"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg><span>EN</span></button><button type="button" data-set="fr" lang="fr" aria-label="Français" aria-pressed="false"><svg viewBox="0 0 3 2" width="24" height="16" aria-hidden="true"><rect width="1" height="2" fill="#0055A4"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#EF4135"/></svg><span>FR</span></button></div>
+</div></header>
+
+<main id="fr-top">
+<div class="wrap">
+<div class="hero">
+<p class="eyebrow">Level Designer / Game Designer junior · Lyon, France</p>
+<h1>Je construis des niveaux qui guident le joueur sans lui dire où aller.</h1>
+<p class="lead">Six projets d’équipe et deux petits niveaux réalisés à GAMESUP (2021–2023) sur Unreal Engine et Unity : blockout, lumière, narration et environmental storytelling.</p>
+<div class="btns"><a class="btn main" href="#fr-projects">Voir mes projets</a><a class="btn" href="CV_Hadrien_DELATTRE.pdf">Télécharger mon CV (PDF)</a></div>
+</div>
+</div>
+
+<section id="fr-projects"><div class="wrap">
+<h2>Projets</h2>
+<p class="sub">Ouvre « Mécaniques, contraintes et solutions » sur chaque carte pour voir le raisonnement de design.</p>
+<div class="grid">
+
+<article class="card" id="fr-insect">
+<img src="https://static.wixstatic.com/media/e35348_4b475cdb702840f99875951095424c88~mv2.png" alt="Capture du temple antique dans In'Sect" loading="lazy">
+<div class="body"><p class="meta">2023 · Horreur / Enquête · Vertical slice · PC</p>
+<h3>In'Sect</h3><p class="role">Level Design</p>
+<p>Un crypto-zoologue explore les ruines d’un temple bâti par une secte au sommet d’une montagne, en quête de la vérité sur ses parents.</p>
+<details><summary>Mécaniques, contraintes et solutions</summary>
+<h4>Mécaniques</h4><p>Exploration, infiltration dans des ombres hostiles et énigmes débloquées avec le téléphone du joueur.</p>
+<h4>Contraintes</h4><p>Naviguer dans un bâtiment fermé, et construire des niveaux alors que le game design évoluait sans cesse : un niveau pouvait fonctionner une semaine et être inutilisable la suivante.</p>
+<h4>Solutions</h4><p>Une boucle de QA permanente sur chaque segment (essai, retour, modification, évolution ou suppression). Quand les changements s’accumulaient, le level design se mettait en pause pour que l’équipe valide d’abord les nouvelles features et leur impact.</p></details>
+<ul class="tags"><li>Unreal Engine 5</li><li>Miro</li><li>ClickUp</li><li>Coda</li><li>Mantis</li><li>TortoiseSVN</li></ul></div></article>
+
+<article class="card" id="fr-beast-show">
+<img src="https://static.wixstatic.com/media/e35348_0cde26a3d0094b6495e4fc6dcf2f84c5~mv2.png" alt="Capture d’une arène de forge dans The Be[a]st Show" loading="lazy">
+<div class="body"><p class="meta">2022 · FPS action-aventure · Blockout · PC</p>
+<h3>The Be[a]st Show</h3><p class="role">Level Design · Lumière</p>
+<p>En 2123, un militant s’infiltre dans un show télé mortel. Son arme à gravité est son seul atout, dans un jeu qui alterne phases d’action et phases narratives.</p>
+<details><summary>Mécaniques, contraintes et solutions</summary>
+<h4>Mécaniques</h4><p>Changer la gravité d’une salle (haut, bas, zéro) ou d’un seul ennemi, en plus de courir, sauter et tirer.</p>
+<h4>Contraintes</h4><p>Utiliser la gravité comme arme dans une arène en free-for-all, et rendre les salles jouables au sol comme au plafond.</p>
+<h4>Solutions</h4><p>Tuer grâce à l’environnement : dans une usine de forge, métal en fusion, jets de vapeur et presses deviennent des pièges. Chaque salle a été conçue deux fois, avec des motifs différents mais cohérents, pour que le sol devienne le plafond.</p></details>
+<p class="links"><a href="https://341ada7d-9b2a-4232-967e-962ad962535e.filesusr.com/ugd/e35348_f5126f9875644737b19e42c2c0759ea4.pdf">Document de level design (PDF)</a><a href="https://341ada7d-9b2a-4232-967e-962ad962535e.filesusr.com/ugd/e35348_e20778fcf84a43e5aa48d06fc11c7f3a.pdf">HCD (PDF)</a></p>
+<ul class="tags"><li>Unity 2021.3</li><li>Équipe de 4</li></ul></div></article>
+
+<article class="card" id="fr-fortress">
+<img src="https://static.wixstatic.com/media/e35348_8ec91e70ad444c86981ddbac0612702d~mv2.png" alt="Capture de la forteresse assiégée dans Fortress" loading="lazy">
+<div class="body"><p class="meta">2022 · Action-aventure · Blockout · PC</p>
+<h3>Fortress</h3><p class="role">Level Design · Narrative Design</p>
+<p>Un corsaire de la guerre de Succession d’Espagne arrive dans une forteresse française après un assaut anglais, à la recherche d’un navire de poudre noire.</p>
+<details><summary>Mécaniques, contraintes et solutions</summary>
+<h4>Mécaniques</h4><p>Sauter, grimper, interagir. L’accent était mis sur la narration environnementale, donc pas de features complexes.</p>
+<h4>Contraintes</h4><p>Raconter une histoire d’après-bataille compréhensible à travers le niveau, autour d’un PNJ aussi important que le joueur.</p>
+<h4>Solutions</h4><p>Garder la forteresse et son contexte d’après-combat, renforcer les traits du PNJ et rendre la mission satirique plutôt que sérieuse, pour laisser un moment mémorable.</p></details>
+<ul class="tags"><li>Unreal Engine 4.27</li><li>TortoiseSVN</li><li>Équipe de 3</li></ul></div></article>
+
+<article class="card" id="fr-jedi">
+<img src="https://static.wixstatic.com/media/e35348_30ab14cdd85d4841a916c6d734a37c8e~mv2.png" alt="Capture du niveau de la station Kamino" loading="lazy">
+<div class="body"><p class="meta">2022 · Action-aventure · Blockout · PC · workshop de 3 semaines</p>
+<h3>Jedi Fallen Order: Kamino</h3><p class="role">Level Design · Level Building · Lumière</p>
+<p>Un niveau situé après la fin du jeu : sauver des scientifiques sur Kamino et contrer la 4ᵉ Sœur.</p>
+<details><summary>Mécaniques, contraintes et solutions</summary>
+<h4>Mécaniques</h4><p>Les déplacements de base du personnage (saut, double saut, attaques, esquive, escalade), plus une phase astrale qui permet de traverser certaines surfaces, et des tubes à grande vitesse à sens unique.</p>
+<h4>Contraintes</h4><p>Donner du poids à la nouvelle mécanique : retours en arrière, objets accessibles uniquement en forme astrale, et « contraindre sans bloquer, faire découvrir sans trop guider ». L’IA ennemie rendait aussi certaines zones trop difficiles.</p>
+<h4>Solutions</h4><p>Plusieurs salles ont été refaites de zéro autour du gameplay astral, et l’IA a été testée et rééquilibrée.</p></details>
+<ul class="tags"><li>Unreal Engine 5</li><li>Équipe de 4</li></ul></div></article>
+
+<article class="card" id="fr-cryptids">
+<img src="https://static.wixstatic.com/media/e35348_90395a0898304639b9d97d0e3fd972a0~mv2.png" alt="Capture de la forêt dans la brume dans Cryptids" loading="lazy">
+<div class="body"><p class="meta">2021–2022 · Horreur / Enquête · Vertical slice · PC</p>
+<h3>Cryptids</h3><p class="role">Level Design · Level Building · Environnement (feuillage)</p>
+<p>Un enquêteur explore un village amish abandonné dans une forêt de l’Ontario et doit rapporter la preuve d’une créature : une photo.</p>
+<details><summary>Mécaniques, contraintes et solutions</summary>
+<h4>Mécaniques</h4><p>Exploration, évitement de la créature, collecte d’indices, photo de la créature, neutralisation optionnelle pour une meilleure récompense, puis fuite.</p>
+<h4>Contraintes</h4><p>Créer la peur sur une carte semi-ouverte, où le joueur peut aller presque partout et où son trajet est difficile à anticiper.</p>
+<h4>Solutions</h4><p>Guider avec la lumière et l’obscurité, les racines et les arbres. Ce n’était qu’une solution partielle : le golden path et le flow n’ont pas été totalement optimisés, ce qui reste la principale leçon du projet.</p></details>
+<p class="links"><a href="https://www.youtube.com/watch?v=V8iWyTBf3VI">Voir la vidéo</a></p>
+<ul class="tags"><li>Unreal Engine 4.27</li><li>ClickUp</li></ul></div></article>
+
+<article class="card" id="fr-key-to-freedom">
+<img src="https://static.wixstatic.com/media/e35348_e532afb22f0d424d9b4031980dd0b17a~mv2.png" alt="Capture d’une salle dans Key to Freedom" loading="lazy">
+<div class="body"><p class="meta">2021–2022 · Escape game coopératif · Blockout · PC</p>
+<h3>Key to Freedom</h3><p class="role">Level Design · Lumière · Narrative Design</p>
+<p>Des survivants s’allient pour s’échapper d’une maison de la mort dirigée par un milliardaire psychopathe : un escape game croisé avec un thriller. Mon projet personnel de fin d’année.</p>
+<details><summary>Mécaniques, contraintes et solutions</summary>
+<h4>Mécaniques</h4><p>Interagir avec le décor et avec les autres joueurs, courir, et utiliser des objets pour survivre.</p>
+<h4>Contraintes</h4><p>Faciliter la communication entre joueurs, et garder un escape game rejouable.</p>
+<h4>Solutions</h4><p>Un chat de proximité et un système de pings pour communiquer. Pour la rejouabilité : plus d’énigmes que nécessaire, des salles à position fixe mais au contenu variable, et plusieurs portes de sortie dont une seule s’ouvre.</p></details>
+<p class="links"><a href="https://www.artstation.com/delattrehadrien">Plus de captures sur ArtStation</a></p>
+<ul class="tags"><li>Unreal Engine 5</li><li>Niveau solo</li></ul></div></article>
+
+</div></div></section>
+
+<section id="fr-small"><div class="wrap small">
+<h2>Petits projets</h2>
+<p class="sub">Premiers exercices de blockout et de lumière.</p>
+<div class="grid">
+<article class="card"><div class="body"><p class="meta">2022 · Action-adventure · Blockout · PC</p><h3>Gaïa</h3><p class="role">Level Design</p>
+<img src="https://static.wixstatic.com/media/e35348_bd35a619e41b465dacf218794b4a0cdd~mv2.png" alt="Capture de blockout de Gaïa" loading="lazy"><ul class="tags"><li>Unreal Engine 4.27</li></ul></div></article>
+<article class="card"><div class="body"><p class="meta">2021 · Action-aventure · Blockout · PC</p><h3>Sword of Arc</h3><p class="role">Level Design · Lumière</p>
+<img src="https://static.wixstatic.com/media/e35348_ba1a6330a5804e67b6a5646331d915f3~mv2.png" alt="Capture de blockout éclairé de Sword of Arc" loading="lazy"><ul class="tags"><li>Unreal Engine 4.27</li></ul></div></article>
+</div></div></section>
+
+<section id="fr-about"><div class="wrap">
+<h2>À propos</h2>
+<div class="about">
+<div>
+<p>Je suis Hadrien, Level / Game Designer junior basé à Lyon. J’ai grandi avec Age of Empires, The Elder Scrolls et The Witcher (le premier Witcher est sous-estimé), et mon objectif est simple : travailler dans l’industrie et faire des jeux dont je suis fier.</p>
+<p>Je prépare aujourd’hui un Master en management des projets d’innovation et entrepreneuriat, qui ajoute coordination d’équipe, planification et suivi des livrables à mon bagage de design.</p>
+<p><strong>Soft skills.</strong> Curieux, avec une vue d’ensemble d’un projet et de ses parties. Attentif : chaque idée porte une inspiration, chaque retour est une façon de s’améliorer. Diplomate : écouter ne sert à rien si on ne construit rien avec ce qu’on entend.</p>
+</div>
+<div class="panel">
+<h3>Hard skills</h3>
+<ul>
+<li>Pipeline de level design : dessin, schéma, layout, affordance, blockin, blockout, vue 360</li>
+<li>Unreal Engine 4 et 5, Unity</li>
+<li>Maya pour les props, feuillage, lumière</li>
+<li>Trello, HacknPlan, Coda, ClickUp, TortoiseSVN</li>
+</ul></div>
+</div></div></section>
+
+<section id="fr-contact"><div class="wrap">
+<h2>Contact</h2>
+<p>À la recherche d’une alternance en gestion de projet et transformation numérique. Parlons-en.</p>
+<div class="btns"><a class="btn main" href="mailto:hadrien.delattre@iriig.fr">M’écrire</a><a class="btn" href="https://www.linkedin.com/in/hadrien-delattre-73a23b150/">LinkedIn</a><a class="btn" href="https://www.artstation.com/delattrehadrien">ArtStation</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Hadrien Delattre · Lyon, France</div></footer>
+</div>
+<script>
+(function(){
+var T={en:"Hadrien Delattre – Junior Level / Game Designer",fr:"Hadrien Delattre – Level Designer / Game Designer junior"};
+function set(l){
+document.getElementById("site-en").hidden=l!=="en";
+document.getElementById("site-fr").hidden=l!=="fr";
+document.documentElement.lang=l;document.title=T[l];
+document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-set")===l?"true":"false")});
+try{localStorage.setItem("lang",l)}catch(e){}
+try{var u=new URL(location.href);u.searchParams.set("lang",l);u.hash="";history.replaceState(null,"",u.toString())}catch(e){}
+}
+document.addEventListener("click",function(e){
+var b=e.target.closest&&e.target.closest(".lang button");
+if(b){set(b.getAttribute("data-set"));window.scrollTo(0,0)}
+});
+var p="",s="";
+try{p=new URLSearchParams(location.search).get("lang")}catch(e){}
+try{s=localStorage.getItem("lang")}catch(e){}
+var ok=function(x){return x==="fr"||x==="en"};
+var l=ok(p)?p:ok(s)?s:((navigator.language||"").slice(0,2)==="fr"?"fr":"en");
+set(l);
+})();
+</script>
 </body>
 </html>
